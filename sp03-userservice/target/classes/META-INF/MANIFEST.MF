@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: sp03-userservice
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: 12077
+Implementation-Vendor-Id: com.tedu
+Build-Jdk: 1.8.0_211
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/sp03-userservice
+Created-By: Maven Integration for Eclipse
+

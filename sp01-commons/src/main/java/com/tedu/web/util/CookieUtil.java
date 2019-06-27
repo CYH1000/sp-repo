@@ -5,6 +5,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 public class CookieUtil {
+
 	/**
 	 * @param response
 	 * @param name
@@ -57,4 +58,5 @@ public class CookieUtil {
 	public static void removeCookie(HttpServletResponse response, String name, String domain, String path) {
 		setCookie(response, name, "", domain, path, 0);
 	}
+
 }

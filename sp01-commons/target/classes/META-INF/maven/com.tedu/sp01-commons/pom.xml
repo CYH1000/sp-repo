@@ -1,14 +1,10 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.tedu</groupId>
-	<artifactId>sp01-commons</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>sp01-commons</name>
-	<description>demo spring-clond</description>
-	<dependencies>
-	<dependency>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.tedu</groupId>
+  <artifactId>sp01-commons</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <dependencies>
+		<dependency>
 			<groupId>com.fasterxml.jackson.module</groupId>
 			<artifactId>jackson-module-parameter-names</artifactId>
 			<version>2.9.8</version>
@@ -45,11 +41,13 @@
 			<version>1.7.26</version>
 		</dependency>
 		<dependency>
-			<groupId>org.apache.commons</groupId>
-			<artifactId>commons-lang3</artifactId>
-			<version>3.9</version>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-lang3</artifactId>
+		    <version>3.9</version>
 		</dependency>
+
 	</dependencies>
+
 	<build>
 		<plugins>
 			<plugin>
