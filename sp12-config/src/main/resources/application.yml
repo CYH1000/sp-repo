@@ -11,10 +11,11 @@ spring:
         git:
           uri: https://github.com/CYH1000/sp-repo
           searchPaths: sp-config
-          username: CYH1000
-          password: Aa2015212127
-          
-rabbitmq:
+#          username: CYH1000
+#          password: Aa2015212127
+#        native:
+#          search-locations: classpath:/config     
+  rabbitmq:
     host: 192.168.146.129
     port: 5672
     username: admin

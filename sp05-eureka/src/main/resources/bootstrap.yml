@@ -1,0 +1,5 @@
+spring: 
+  cloud:
+    inetutils:
+      ignored-interfaces:
+        - VM.*

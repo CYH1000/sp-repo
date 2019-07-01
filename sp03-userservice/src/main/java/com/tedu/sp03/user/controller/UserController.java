@@ -1,4 +1,4 @@
-package com.tedu.sp02.user.controller;
+package com.tedu.sp03.user.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

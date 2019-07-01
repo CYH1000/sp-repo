@@ -1,4 +1,4 @@
-package com.tedu.sp02.item.service;
+package com.tedu.sp03.user.service;
 
 import java.util.List;
 
@@ -13,14 +13,12 @@ import com.tedu.web.util.JsonUtil;
 
 import lombok.extern.slf4j.Slf4j;
 
-@RefreshScope
 @Slf4j
 @Service
+@RefreshScope
 public class UserServiceImpl implements UserService {
-	//动态刷新时，更新的配置数据，会重新注入
 	@Value("${sp.user-service.users}")
 	private String userJson;
-
 	@Override
 	public User getUser(Integer id) {
 		log.info("users json string : "+userJson);
@@ -30,7 +28,7 @@ public class UserServiceImpl implements UserService {
 				return u;
 			}
 		}
-
+		
 		return new User(id, "name-"+id, "pwd-"+id);
 	}
 
@@ -39,4 +37,5 @@ public class UserServiceImpl implements UserService {
 		//TODO 这里增加积分
 		log.info("user "+id+" - 增加积分 "+score);
 	}
+
 }
