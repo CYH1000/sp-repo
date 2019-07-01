@@ -13,14 +13,16 @@ spring:
 server:
   port: 8101
   #添加eureka的配置
-  #kfdjjkg
 eureka:
   client:
     service-url:
       defaultZone: http://eureka1:2001/eureka,http://eureka2:2002/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
+    
 management:
   endpoints:
     web:
       exposure:
         include: refresh
-        # fdjkaklg
