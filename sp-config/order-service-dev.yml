@@ -6,33 +6,30 @@ spring:
     port: 5672
     username: admin
     password: admin
-#server:
-  #sport: 8201
 
+  #添加eureka的配置
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka1:2001/eureka, http://eureka2:2002/eureka
+      defaultZone: http://eureka1:2001/eureka,http://eureka2:2002/eureka
 feign:
   hystrix:
     enabled: true
-    
 management:
   endpoints:
     web:
       exposure:
         include: hystrix.stream
-        
 ---
 spring:
   profiles: order1
-  
 server:
   port: 8201
-  
 ---
 spring:
   profiles: order2
-  
 server:
   port: 8202
+  
+   
+    
