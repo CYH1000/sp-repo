@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: config-server
+    
+  profiles:
+    active: native
+  
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/CYH1000/sp-repo
+          searchPaths: sp-config
+          username: CYH1000
+          password: Aa2015212127
+          
+rabbitmq:
+    host: 192.168.146.129
+    port: 5672
+    username: admin
+    password: admin
+    
+server:
+  port: 6001
+    
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka1:2001/eureka, http://eureka2:2002/eureka
+      
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh

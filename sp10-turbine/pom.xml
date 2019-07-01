@@ -39,6 +39,11 @@
 			<artifactId>sp01-commons</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+		<!-- pom.xml 添加 config 客户端依赖 -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-config</artifactId>
+		</dependency>
 	</dependencies>
 
 	<dependencyManagement>
