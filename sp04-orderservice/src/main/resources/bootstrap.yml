@@ -1,16 +1,8 @@
 spring: 
   cloud:
-    config:
-      discovery:
-        enabled: true
-        service-id: config-server
-      name: order-service
-      profile: dev
-    inetutils:
-      ignored-interfaces:
-        - VM.*
-#      preferred-networks:
-#        - 192.168.0   
+    inetutils: 
+       ignored-interfaces:
+         - VM.*
 eureka:
   client:
     service-url:
